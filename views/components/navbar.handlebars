@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menú de Navegación</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            {{#if user}}
+                <li><a href="/auth/logout">Logout</a></li>
+            {{else}}
+                <li><a href="/auth/login">Iniciar Sesión</a></li>
+                <li><a href="/auth/register">Registrarse</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+</body>
+</html>
